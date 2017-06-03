@@ -1,0 +1,18 @@
+.sidebar-open {
+  @extend .sidebar;
+  width: 300px;
+}
+
+.sidebar-closed {
+  @extend .sidebar;
+  width: 0;
+}
+
+.sidebar {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  right: 0;
+  background-color: black;
+}

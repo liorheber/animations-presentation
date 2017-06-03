@@ -1,0 +1,101 @@
+@import "../../common/globals";
+
+.menu {
+  position:                   relative;
+  width:                      100%;
+  height:                     $menu_height;
+  background-color:           $menu_background;
+  padding:                    0 10px;
+  color:                      $light_default_color;
+  box-shadow:                 rgba(0,0,0,0.18) 0 3px 5px;
+  z-index:                    3;
+  h1 {
+    padding:                  0;
+    margin:                   0;
+    line-height:              $menu_height;
+    font-size:                $main_font_size;
+    font-weight:              100;
+    display:                  inline-block;
+  }
+}
+
+.actions {
+  display:                    inline-block;
+  float:                      right;
+  list-style:                 none;
+  margin:                     0;
+  padding:                    0;
+}
+
+.actions_items {
+  display:                    inline-block;
+}
+
+.notification {
+  @extend                     .icon-menu;
+  &:after {
+    content:                  '\f0a2';
+  }
+}
+
+.user {
+  @extend                     .icon-menu;
+  &:after {
+    content:                  '\f2c0';
+  }
+}
+
+.bar {
+  @extend                     .icon-menu;
+  &:after {
+    content:                  '\f0c9';
+  }
+}
+
+.icon-menu {
+  text-align:                 center;
+  display:                    inline-block;
+  font-family:                'FontAwesome';
+  font-size:                  20px;
+  width:                      $menu_height;
+  height:                     $menu_height;
+  line-height:                $menu_height;
+  cursor:                     pointer;
+  &:hover {
+    color:                    $light_hover_color;
+  }
+}
+
+.dropdown {
+  display:                    none;
+  position:                   absolute;
+  background-color:           $dropdown_background;
+  box-shadow:                 rgba(0,0,0,0.18) 0 3px 5px;
+  list-style:                 none;
+  margin:                     0;
+  padding:                    0;
+  a {
+    color:                    $dark_default_color;
+    text-decoration:          none;
+    padding:                  0 15px;
+    line-height:              40px;
+    display:                  block;
+    &:hover {
+      color:                  $dark_hover_color;
+      background-color:       $dropdown_background_hover;
+    }
+  }
+}
+
+.icon-selected {
+  color:                      $light_hover_color;
+  transform:                  scale(1.2) !important;
+  &:hover {
+    transform:                scale(1.2) !important;
+  }
+}
+
+.openMenu {
+  display:                    block;
+  z-index:                    999;
+}

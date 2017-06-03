@@ -1,0 +1,38 @@
+{
+  "name": "animations-presentation",
+  "version": "1.0.0",
+  "description": "Presentation about animations with React",
+  "main": "index.js",
+  "repository": "https://github.com/liorheber/animations-presentation.git",
+  "author": "Lior Heber <lior.heber@kenshoo.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "storybook": "start-storybook -p 6007"
+  },
+  "devDependencies": {
+    "@kadira/react-storybook-addon-info": "^3.4.0",
+    "@kadira/storybook": "^2.35.3",
+    "@kadira/storybook-addon-knobs": "^1.7.1",
+    "@kadira/storybook-addon-options": "^1.0.2",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "node-sass": "^4.5.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.3",
+    "storybook": "^0.0.0",
+    "storybook-readme": "^2.0.2",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.5.4",
+    "react-click-outside": "tj/react-click-outside",
+    "react-dom": "^15.5.4",
+    "react-transition-group": "^1.1.3"
+  }
+}

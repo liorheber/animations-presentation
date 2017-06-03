@@ -1,0 +1,68 @@
+@import "../../common/globals";
+
+.table {
+  padding:                    50px 0;
+  display:                    flex;
+  flex-direction:             column;
+  z-index: 1;
+}
+.row {
+  flex:                       1;
+  display:                    flex;
+}
+
+.col {
+  margin:                     1px;
+  padding:                    10px;
+  background-color:           $table_background;
+  flex:                       1;
+  box-shadow:                 rgba(0,0,0,0.18) 0 0 5px;
+}
+
+.menu {
+  margin:                     1px;
+  padding:                    10px;
+  background-color:           $dropdown_background;
+  flex:                       1;
+  box-shadow:                 rgba(0,0,0,0.18) 0 0 5px;
+}
+
+.action {
+  display:                    inline-block;
+  font-family:                'FontAwesome';
+  font-size:                  20px;
+  cursor:                     pointer;
+  color:                      $dark_default_color;
+  padding: 0 20px 0 0;
+  &:hover {
+    color:                    $dark_hover_color;
+  }
+}
+
+.add {
+  @extend                     .action;
+  &:after {
+    content:                  '\f196';
+  }
+}
+
+.remove {
+  @extend                     .action;
+  &:after {
+    content:                  '\f147';
+  }
+}
+
+.settings {
+  @extend                     .action;
+  &:after {
+    content:                  '\f1de';
+  }
+}
+
+.refresh {
+  @extend                     .action;
+  &:after {
+    content:                  '\f021';
+  }
+}

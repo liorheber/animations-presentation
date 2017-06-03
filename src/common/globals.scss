@@ -1,0 +1,50 @@
+// font sizes
+
+$default_font_size:             12px;
+$medium_font_size:              14px;
+$large_font_size:               16px;
+$main_font_size:                18px;
+$presentation_font_size:        22px;
+$main_presentation_font_size:   32px;
+
+
+// colors
+
+$gray_100:                      #FFFFFF;
+$gray_200:                      #F9F9F9;
+$gray_300:                      #EAEAEA;
+$gray_400:                      #D6D6D6;
+$gray_500:                      #AEAEAE;
+$gray_600:                      #727272;
+$gray_700:                      #6F6F6F;
+$gray_800:                      #373737;
+$gray_900:                      #292929;
+$gray_1000:                     #1B1B1B;
+
+$blue_100:                      #3eacff;
+$green_100:                     #07cb70;
+$red_100:                       #ff7355;
+$purple_100:                    #a009ff;
+$orange_100:                    #ff8602;
+
+$light_default_color:           $gray_300;
+$light_hover_color:             $gray_100;
+$light_active_color:            $gray_200;
+$light_disabled_color:          $gray_400;
+
+$dark_default_color:            $gray_700;
+$dark_hover_color:              $gray_800;
+$dark_active_color:             $gray_600;
+$dark_disabled_color:           $gray_500;
+
+$menu_background:               $gray_900;
+$table_background:              $gray_100;
+$dropdown_background:           $gray_200;
+$dropdown_background_hover:     $gray_300;
+
+
+$menu_height:                   50px;
+$menu_border:                   $gray_600;
+
+$inner_loader_background:       $gray_400;
+$outer_loader_background:       $blue_100;
